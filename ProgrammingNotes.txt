@@ -1,0 +1,59 @@
+PROGRAMMING NOTES
+
+
+The crux of this game's view is the integration of the position of the items
+in a larger world, and the way they are viewed on the camera.
+
+WORLD SPACE
+
+The CAMERA
+  -The camera is rendered on the canvas, and as of now, is the entire size
+    of the canvas.
+
+
+
+
+
+VERLET INTEGRATION
+-each object must undergo verlet transformation each animation cycle
+  to make sure they are in the appropriate positions
+
+LEGEND:
+  Xc/Yc = current values
+  Xp/Yp = past values
+  Ax/Ay = acceleration
+  X'/Y' = differentiated values
+
+STEPS FOR TRANSFORMATION:
+
+1. Add acceleration vector to current position values
+  Xc += Ax * .256
+  Yc += Ay * .256
+
+2. Get differentiated X and Y positions
+  X' = 2Xc - Xp
+  Y' = 2Yc - Yp
+
+3. Set past X and Y values to current X and Y values
+  Xp = Xc
+  Yp = Yc
+
+4. Set current X and Y values to the differentiated positions
+  Xc = X'
+  Yp = Y'
+
+5. Set X and Y acceleration vectors to 0
+  Ax = 0
+  Ay = 0
+
+Real example:
+  this.cpos.x += this.acel.x * 0.256;
+  this.cpos.y += this.acel.y * 0.256;
+  var cx = 2 * this.cpos.x - this.ppos.x;
+  var cy = 2 * this.cpos.y - this.ppos.y;
+  this.ppos.x = this.cpos.x;
+  this.ppos.y = this.cpos.y;
+  this.cpos.x = cx;
+  this.cpos.y = cy;
+  this.acel.x = 0;
+  this.acel.y = 0;
