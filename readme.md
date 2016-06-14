@@ -1,6 +1,6 @@
 # Cordyceps
 
-Cordyceps is a psychedelic platform jumper web game where you, the player, a biotech engineer working on a new strain of monoculture fungus are caught in the middle of a factory-wide contamination. You have to get from fumigation chamber to fumigation chamber before the spores subsume your entire cognitive reality.
+Cordyceps is a psychedelic platform jumper web game where you, the player, a biotech engineer working on a new strain of monoculture fungus, are caught in the middle of a factory-wide contamination. You have to get from fumigation chamber to fumigation chamber before the spores subsume your entire cognitive reality.
 
 ### MVP
 
@@ -17,8 +17,7 @@ Cordyceps includes:
 
 ### Wireframes
 
-This will be a lot less involved than for your Capstone, but make sure you have drawings
-for each view, including modals.
+![wireframes lol](/Users/thomsen/Desktop/cordyceps/wireframes.JPG)
 
 ### Implementation Timeline
 
