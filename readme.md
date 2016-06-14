@@ -17,7 +17,9 @@ Cordyceps includes:
 
 ### Wireframes
 
-![wireframes lol](/Users/thomsen/Desktop/cordyceps/wireframes.JPG)
+![wireframes lol][wireframes]
+
+[wireframes]: /Users/thomsen/Desktop/cordyceps/wireframes.JPG "Wireframes lol"
 
 ### Implementation Timeline
 
