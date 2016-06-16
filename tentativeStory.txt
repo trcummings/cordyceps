@@ -23,7 +23,3 @@ Features:
     -camera leads player by a third of the screen, and switches when the player
     -turns around
     -buncha particle effects. Oh god I love particles.
-
-
-
-Gameplay progression:
