@@ -23,10 +23,20 @@
         /*width: auto;*/
         display: block;
       }
+
+      #start-game {
+        position: absolute;
+        left: calc(50% - 100px);
+        top: calc(50% - 50px);
+        height: 100px;
+        width: 200px;
+        border: 1px solid #fff;
+      }
     </style>
   </head>
   <body>
     <canvas id="canvas"></canvas>
+    <button id='start-game' />
     <script type="application/javascript" src="lib/bundle.js"></script>
   </body>
 </html>
