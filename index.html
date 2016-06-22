@@ -18,16 +18,20 @@
         visibility: hidden;
       }
 
-      canvas {
+      div {
+        position: relative;
+        width: 1000px;
         margin: 40px auto;
-        /*width: auto;*/
+      }
+
+      canvas {
         display: block;
       }
 
       #start-game {
         position: absolute;
         left: calc(50% - 100px);
-        top: calc(50% - 50px);
+        top: 400px;
         height: 100px;
         width: 200px;
         border: 1px solid #fff;
@@ -35,8 +39,11 @@
     </style>
   </head>
   <body>
-    <canvas id="canvas"></canvas>
-    <button id='start-game' />
+    <div>
+      <canvas id="canvas"></canvas>
+      <button id='start-game' />
+    </div>
+
     <script type="application/javascript" src="lib/bundle.js"></script>
   </body>
 </html>
