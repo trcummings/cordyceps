@@ -26,6 +26,9 @@
 
       canvas {
         display: block;
+        -webkit-box-shadow: 0px 3px 38px 6px rgba(255,255,255,0.2);
+        -moz-box-shadow: 0px 3px 38px 6px rgba(255,255,255,0.2);
+        box-shadow: 0px 3px 38px 6px rgba(255,255,255,0.2);
       }
 
       #start-game {
@@ -34,14 +37,33 @@
         top: 400px;
         height: 100px;
         width: 200px;
-        border: 1px solid #fff;
+        /*border: 1px solid #fff;*/
+        -webkit-box-shadow: 0px 3px 38px 6px rgba(255,255,255,0.2);
+        -moz-box-shadow: 0px 3px 38px 6px rgba(255,255,255,0.2);
+        box-shadow: 0px 3px 38px 6px rgba(255,255,255,0.2);
+      }
+
+      .instructions {
+        margin-top: 20px;
+        text-align: center;
+        margin: auto;
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: lighter;
       }
     </style>
   </head>
   <body>
+
     <div>
       <canvas id="canvas"></canvas>
       <button id='start-game' />
+    </div>
+    <div class='instructions'>
+      <h1>WASD to move, e button to open doors</h1>
+      <a href='http://github.com/trcummings'> creator's github </a>
+      <a href='http://www.thomsencummings.com/'> back to main page </a>
     </div>
 
     <script type="application/javascript" src="lib/bundle.js"></script>
