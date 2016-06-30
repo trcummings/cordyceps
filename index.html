@@ -34,7 +34,19 @@
       #start-game {
         position: absolute;
         left: calc(50% - 100px);
-        top: 400px;
+        top: 300px;
+        height: 100px;
+        width: 200px;
+        /*border: 1px solid #fff;*/
+        -webkit-box-shadow: 0px 3px 38px 6px rgba(255,255,255,0.2);
+        -moz-box-shadow: 0px 3px 38px 6px rgba(255,255,255,0.2);
+        box-shadow: 0px 3px 38px 6px rgba(255,255,255,0.2);
+      }
+
+      #instructions {
+        position: absolute;
+        left: calc(50% - 100px);
+        top: 450px;
         height: 100px;
         width: 200px;
         /*border: 1px solid #fff;*/
@@ -59,11 +71,21 @@
     <div>
       <canvas id="canvas"></canvas>
       <button id='start-game' />
+      <button id='instructions' />
     </div>
     <div class='instructions'>
       <h1>WASD to move, e button to open doors</h1>
-      <a href='http://github.com/trcummings'> creator's github </a>
-      <a href='http://www.thomsencummings.com/'> back to main page </a>
+      <ul>
+        <li>
+          <a href='http://github.com/trcummings'> creator's github </a>
+        </li>
+        <li>
+          <a href='http://linkedin.com/in/thomsencummings'> creator's linkedin </a>
+        </li>
+        <li>
+          <a href='http://www.thomsencummings.com/'> back to main page </a>
+        </li>
+      </ul>
     </div>
 
     <script type="application/javascript" src="lib/bundle.js"></script>
