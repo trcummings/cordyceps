@@ -57,3 +57,12 @@ Real example:
   this.cpos.y = cy;
   this.acel.x = 0;
   this.acel.y = 0;
+
+
+
+NOTES FOR NPM
+
+every object generation should generate a unique objectType ID for each level
+maybe.
+
+this ain't the best system thoghgh
