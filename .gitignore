@@ -8,3 +8,5 @@
 /node_modules
 bundle.js.map
 bundle.js
+
+*.DS_Store
