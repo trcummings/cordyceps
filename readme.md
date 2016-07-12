@@ -7,6 +7,8 @@ Cordyceps is a psychedelic platform jumper web game where you, the player, a hum
 
 Run, jump, and avoid your fallen coworkers as you try and escape the facility. Sometimes, however, infection is inevitable. Get to the nearest fumigation chamber to survive before you lose all grip on material reality!
 
+[Live Here!](http:www.thomsencummings.com/cordyceps "Portfolio Page Game")
+
 ## Screenshots
 
 ![SS1][ss1]
