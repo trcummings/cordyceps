@@ -33,6 +33,53 @@ Cordyceps includes:
 
 ## Future Directions
 
+
 ### NPM package for physics engine
 
 Currently, the dev team (okay, okay, it's just me) is hard at work putting together the current physics engine, object management, sprite rendering, and dynamic camera system into a NPM package called GlassPocket.
+
+
+### More rooms and levels!
+
+Currently, Cordyceps is a stylization heavy game. On the plus side, the code is very modular and scalable, making adding new room, object, and enemy assets very simple. For example:
+
+```JavaScript
+worldContext.game.topRenders.push(new this.Decorative({
+  pos : { x : 225, y : 15 },
+  context : this.game.context,
+  width: 600,
+  height: 160,
+  img: 'lib/sprites/level1/room3/rafter1.png',
+  animated: false,
+  activated: false,
+  sprite: {
+    frameIdx: 0,
+    numFrames: 1,
+    height: 600,
+    width: 160
+  },
+  decorativeId: 2,
+  orientation: 'landscape'
+}));
+
+this._staticObjects.push(new this.Box({
+  pos : { x : 900, y : 310 },
+  context : this.game.context,
+  img: 'lib/sprites/forkliftroom3.png',
+  width: 300,
+  height: 20,
+}));
+
+
+// Ladders
+this._staticObjects.push(new this.Ladder({
+  pos : { x : 1430, y : 150 },
+  context : this.game.context,
+  width: 70,
+  height: 300,
+  ladderId: 1
+}));
+```
+
+
+However, the art team (okay, okay, you got me, it's just me again) has a real N+1 icebox, because all assets are drawn by mouse, one frame at a time.
